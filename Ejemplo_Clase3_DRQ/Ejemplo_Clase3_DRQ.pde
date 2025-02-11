@@ -99,6 +99,7 @@ int yDirection = 1;
 void setup(){
  size(800, 800);
  noStroke();
+//FrameRate es la velocidade a la que corre el programa
 frameRate(30);
 
 //Inicializamos nuestra burbuja en la mitad de la pantalla
