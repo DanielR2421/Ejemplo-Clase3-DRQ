@@ -43,7 +43,7 @@
 //ARRAYS (ARREGLOS) - ARMARIO PARA GUARDAR VARIABLES
 
 //Inicializar el arreglo
-int[] xPositions;
+float[] xPositions;
 
 void setup(){
  size(800, 800);
@@ -51,7 +51,7 @@ void setup(){
  noStroke();
  
  //Definir tamaño del arreglo
- xPositions = new int [10];
+ xPositions = new float [10];
  
  
  
@@ -62,9 +62,18 @@ void setup(){
  //println(xPositions.length);
  
 for(int i = 0; i < xPositions.length; i++){
-xPositions[i] = 50 * i + 20;
+xPositions[i] = random(0, width);
 println(xPositions[i]);
  
 } 
 } 
+ 
+ void draw() {
+   // Usar los valores que inicializamos para dibujar una serie de circulos
+   for (int i = 0; i < xPositions.length; i++){
+  
+           //posX, posY, ancho, alto 
+     ellipse(xPositions[i],   20,    50,   50);
+   }
+ }
  
