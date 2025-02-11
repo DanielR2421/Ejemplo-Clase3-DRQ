@@ -85,7 +85,7 @@
  
  // && amabas se tienen que cumplir, OR una o la otra se mueve, o Not que dice que no
  
- //Ejercicio final
+ //Ejercicio final: usar esta estructura para la entrega 3
  
 float xPos;
 float yPos;
